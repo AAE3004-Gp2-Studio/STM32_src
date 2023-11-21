@@ -56,6 +56,7 @@ typedef struct
 	float Target;      //Control the target speed of the motor //电机目标速度值，控制电机目标速度
 	float Velocity_KP; //Speed control PID parameters //速度控制PID参数
 	float	Velocity_KI; //Speed control PID parameters //速度控制PID参数
+	float Velocity_KD;
 }Motor_parameter;
 
 //Smoothed the speed of the three axes
@@ -76,7 +77,7 @@ extern u8 Car_Mode;
 extern int Servo;
 extern float RC_Velocity;
 extern float Move_X, Move_Y, Move_Z; 
-extern float Velocity_KP, Velocity_KI;	
+extern float Velocity_KP, Velocity_KI, Velocity_KD;	
 extern Smooth_Control smooth_control;
 extern Motor_parameter MOTOR_A, MOTOR_B, MOTOR_C, MOTOR_D;
 extern float Encoder_precision;
