@@ -380,11 +380,11 @@ int Incremental_PI_A (float Encoder,float Target)
 	 static float Bias,Pwm,Last_bia,Pre_Last_bia;
 	 Bias=Target-Encoder; //Calculate the deviation //计算偏差
 	//  Pwm+=Velocity_KP*(Bias-Last_bias)+Velocity_KI*Bias; 
-	 Pwm += Velocity_KP * (Bias - Last_bias) + Velocity_KI * Bias + Velocity_KD * (Bias - 2 * Last_bias + Pre_Last_bia)
+	 Pwm += Velocity_KP * (Bias - Last_bia) + Velocity_KI * Bias + Velocity_KD * (Bias - 2 * Last_bia + Pre_Last_bia);
 	 if(Pwm>16800)Pwm=16800;
 	 if(Pwm<-16800)Pwm=-16800;
-	 Pre_Last_bia=Last_bias;
-	 Last_bias=Bias; //Save the last deviation //保存上一次偏差 
+	 Pre_Last_bia=Last_bia;
+	 Last_bia=Bias; //Save the last deviation //保存上一次偏差 
 	 return Pwm;    
 }
 int Incremental_PI_B (float Encoder,float Target)
@@ -392,11 +392,11 @@ int Incremental_PI_B (float Encoder,float Target)
 	 static float Bias,Pwm,Last_bia,Pre_Last_bia;
 	 Bias=Target-Encoder; //Calculate the deviation //计算偏差
 	//  Pwm+=Velocity_KP*(Bias-Last_bias)+Velocity_KI*Bias; 
-	 Pwm += Velocity_KP * (Bias - Last_bias) + Velocity_KI * Bias + Velocity_KD * (Bias - 2 * Last_bias + Pre_Last_bia)
+	 Pwm += Velocity_KP * (Bias - Last_bia) + Velocity_KI * Bias + Velocity_KD * (Bias - 2 * Last_bia + Pre_Last_bia);
 	 if(Pwm>16800)Pwm=16800;
 	 if(Pwm<-16800)Pwm=-16800;
-	 Pre_Last_bia=Last_bias;
-	 Last_bias=Bias; //Save the last deviation //保存上一次偏差 
+	 Pre_Last_bia=Last_bia;
+	 Last_bia=Bias; //Save the last deviation //保存上一次偏差 
 	 return Pwm;    
 }
 int Incremental_PI_C (float Encoder,float Target)
@@ -404,11 +404,11 @@ int Incremental_PI_C (float Encoder,float Target)
 	 static float Bias,Pwm,Last_bia,Pre_Last_bia;
 	 Bias=Target-Encoder; //Calculate the deviation //计算偏差
 	//  Pwm+=Velocity_KP*(Bias-Last_bias)+Velocity_KI*Bias; 
-	 Pwm += Velocity_KP * (Bias - Last_bias) + Velocity_KI * Bias + Velocity_KD * (Bias - 2 * Last_bias + Pre_Last_bia)
+	 Pwm += Velocity_KP * (Bias - Last_bia) + Velocity_KI * Bias + Velocity_KD * (Bias - 2 * Last_bia + Pre_Last_bia);
 	 if(Pwm>16800)Pwm=16800;
 	 if(Pwm<-16800)Pwm=-16800;
-	 Pre_Last_bia=Last_bias;
-	 Last_bias=Bias; //Save the last deviation //保存上一次偏差 
+	 Pre_Last_bia=Last_bia;
+	 Last_bia=Bias; //Save the last deviation //保存上一次偏差 
 	 return Pwm; 
 }
 int Incremental_PI_D (float Encoder,float Target)
@@ -416,11 +416,11 @@ int Incremental_PI_D (float Encoder,float Target)
 	 static float Bias,Pwm,Last_bia,Pre_Last_bia;
 	 Bias=Target-Encoder; //Calculate the deviation //计算偏差
 	//  Pwm+=Velocity_KP*(Bias-Last_bias)+Velocity_KI*Bias; 
-	 Pwm += Velocity_KP * (Bias - Last_bias) + Velocity_KI * Bias + Velocity_KD * (Bias - 2 * Last_bias + Pre_Last_bia)
+	 Pwm += Velocity_KP * (Bias - Last_bia) + Velocity_KI * Bias + Velocity_KD * (Bias - 2 * Last_bia + Pre_Last_bia);
 	 if(Pwm>16800)Pwm=16800;
 	 if(Pwm<-16800)Pwm=-16800;
-	 Pre_Last_bia=Last_bias;
-	 Last_bias=Bias; //Save the last deviation //保存上一次偏差 
+	 Pre_Last_bia=Last_bia;
+	 Last_bia=Bias; //Save the last deviation //保存上一次偏差 
 	 return Pwm; 
 }
 /**************************************************************************
