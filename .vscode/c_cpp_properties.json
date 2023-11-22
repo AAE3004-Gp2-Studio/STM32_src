@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}",
+                "C:\\Users\\qqj48\\Desktop\\y3s1\\AAE3004\\lab\\ws\\src\\photoelectic_encoder",
+                "E:\\Keil_v5\\ARM\\ARMCC\\include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "configurationProvider": "cmsis-csolution",
+            "compilerPath": ""
+        }
+    ],
+    "version": 4
+}
